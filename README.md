@@ -14,5 +14,6 @@ TODO
 source environnement
 
 ```
-python ./getdata.py
+. ./env.sh
+source python ./mynetatmo.py
 ```

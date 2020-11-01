@@ -43,7 +43,7 @@ try:
     id = uuid.uuid4()
     filename =  str(id) + ".json"
     print(filename)
-    f = open(filename, "w")
+    f = open("samples/" + filename, "w")
     f.write(data2)
     f.close()
     print("File saved local")
@@ -53,7 +53,7 @@ try:
     container_client = blob_service_client.get_container_client("wesynapsefs")
     blob_client = container_client.get_blob_client("netatmo/"+filename)
     print("save the data")
-    with open(filename, "rb") as data:
+    with open("samples/" + filename, "rb") as data:
         blob_client.upload_blob(data)
 except StorageErrorException:
     print("ERROR")
