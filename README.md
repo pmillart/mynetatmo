@@ -6,6 +6,15 @@
 `./python -m samples/venv`
 - install requirements  
 `pip install -r requirements`
+- You can check using:  
+`pip list`
+
+## get Variables from azure key vault
+- CLIENT_ID provided by Netatmo
+- CLIENT_SECRET
+- NETATMO_USERNAME
+- NETATMO_PWD
+- NETATMO_DEVICE_ID
 
 ## Step 1:  Try to get data from Netatmo using curl
 
