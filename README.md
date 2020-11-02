@@ -1,5 +1,12 @@
 # mynetatmo
 
+## Install requirements
+
+- Set new virtual env  
+`./python -m samples/venv`
+- install requirements  
+`pip install -r requirements`
+
 ## Step 1:  Try to get data from Netatmo using curl
 
 Secret are stored in azure keyvault  
@@ -9,11 +16,11 @@ Just run the followinf script
 
 ## Step 2: using Python
 
-TODO 
 
-source environnement
 
+- source environnement  
+`source samples/venv/bin/activate` 
 ```
 . ./env.sh
-source python ./mynetatmo.py
+python mynetatmo.py
 ```
